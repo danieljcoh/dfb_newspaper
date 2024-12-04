@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "pages_app",
     "accounts",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -128,3 +129,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Custom user model
 AUTH_USER_MODEL = "accounts.CustomUser"
+
+
+# login and log out
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
